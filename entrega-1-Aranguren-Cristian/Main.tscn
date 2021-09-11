@@ -7,7 +7,7 @@
 
 [node name="Main" type="Node"]
 
-[node name="Sprite" type="TextureRect" parent="."]
+[node name="Fondo" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 3 )
@@ -16,7 +16,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Piso" type="TextureRect" parent="."]
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 1.0
