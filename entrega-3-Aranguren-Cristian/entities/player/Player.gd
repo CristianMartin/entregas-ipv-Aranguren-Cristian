@@ -48,3 +48,6 @@ func _physics_process(delta):
 	move_and_slide(velocity, Vector2.UP)
 	
 	#position += velocity * delta
+
+func bulletImpact():
+	queue_free()

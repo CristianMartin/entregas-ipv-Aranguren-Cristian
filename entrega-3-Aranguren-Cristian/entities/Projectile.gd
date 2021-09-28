@@ -1,4 +1,4 @@
-extends Sprite
+extends Area2D
 
 onready var lifetime_timer = $LifetimeTimer
 
@@ -24,4 +24,9 @@ func _remove():
 	queue_free()
 
 func _on_VisibilityNotifier2D_screen_exited():
+	call_deferred("_remove")
+
+func _on_Projectile_body_entered(body):
+#	print(body.name)
+	body.bulletImpact()
 	call_deferred("_remove")
